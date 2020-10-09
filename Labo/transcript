@@ -1,0 +1,66 @@
+# Compile of counter.vhd was successful.
+# Compile of counter_tb.vhd was successful.
+# 2 compiles, 0 failed with no errors. 
+# Compile of counter.vhd was successful.
+# Compile of counter_tb.vhd was successful.
+# 2 compiles, 0 failed with no errors. 
+# Compile of counter.vhd was successful.
+# Compile of counter_tb.vhd was successful.
+# 2 compiles, 0 failed with no errors. 
+# Compile of counter.vhd was successful.
+# Compile of counter_tb.vhd was successful.
+# Load canceled
+# Load canceled
+vsim -voptargs=+acc work.counter_tb
+# vsim work.counter_tb 
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.counter_tb(structural)#1
+# Loading work.counter(behav)#1
+add wave sim:/counter_tb/uut/*
+run -all
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /counter_tb/uut
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 1  Instance: /counter_tb/uut
+add wave -r sim:/counter_tb/*
+quit -sim
+vsim -voptargs=+acc work.counter_tb
+# vsim work.counter_tb 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.counter_tb(structural)#1
+# Loading work.counter(behav)#1
+quit -sim
+# Compile of counter.vhd was successful.
+# Compile of counter_tb.vhd was successful.
+# 2 compiles, 0 failed with no errors. 
+vsim -voptargs=+acc work.counter_tb
+# vsim work.counter_tb 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.counter_tb(structural)#1
+# Loading work.counter(behav)#1
+add wave -r sim:/counter_tb/*
+run -all
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /counter_tb/uut
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 1  Instance: /counter_tb/uut
+restart -f
+run -all
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /counter_tb/uut
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 1  Instance: /counter_tb/uut
+# Break key hit 
