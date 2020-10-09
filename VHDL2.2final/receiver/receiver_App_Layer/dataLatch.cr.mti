@@ -1,0 +1,22 @@
+dataLatch.vhd {1 {vcom -work work -2002 -explicit -vopt E:/3BaICT/Ruben/VHDL2.0/receiver/receiver_App_Layer/dataLatch.vhd
+Model Technology ModelSim SE vcom 6.5 Compiler 2009.01 Jan 22 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Compiling entity datalatch
+-- Compiling architecture behav of datalatch
+
+} {} {}} dataLatch_tb.vhd {1 {vcom -work work -2002 -explicit -vopt E:/3BaICT/Ruben/VHDL2.0/receiver/receiver_App_Layer/dataLatch_tb.vhd
+Model Technology ModelSim SE vcom 6.5 Compiler 2009.01 Jan 22 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Compiling entity datalatch_tb
+-- Compiling architecture structural of datalatch_tb
+-- Loading entity datalatch
+
+} {} {}}

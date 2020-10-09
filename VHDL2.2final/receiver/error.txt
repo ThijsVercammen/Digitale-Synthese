@@ -1,0 +1,2 @@
+WARNING:Xst:2677 - Node <semafoor_pres_2> of sequential type is unconnected in block <dpll>.
+WARNING:Xst:2677 - Node <present_state_3> of sequential type is unconnected in block <pngeneratorAndNCO>.

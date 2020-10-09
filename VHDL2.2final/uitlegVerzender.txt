@@ -1,0 +1,13 @@
+
+sequence controller: MUX met counter
+	mux laat pn_start door naar load
+	begint met tellen
+	elke volgende pn_start laat hij door naar shift
+	wanneer counter = 10
+	volgende load
+	bij rst alles op 0
+
+dataregistor:
+	shift wanneer sh hoog komt
+	load waneer load hoog komt
+ 

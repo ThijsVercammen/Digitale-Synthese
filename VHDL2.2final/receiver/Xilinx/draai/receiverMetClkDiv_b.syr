@@ -1,0 +1,690 @@
+Release 10.1 - xst K.31 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to E:/receiver/Xilinx/draai/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to E:/receiver/Xilinx/draai/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: receiverMetClkDiv_b.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+     9.1) Device utilization summary
+     9.2) Partition Resource Summary
+     9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "receiverMetClkDiv_b.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "receiverMetClkDiv_b"
+Output Format                      : NGC
+Target Device                      : xc2vp30-7-ff896
+
+---- Source Options
+Top Module Name                    : receiverMetClkDiv_b
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Convert Tristates To Logic         : Yes
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Library Search Order               : receiverMetClkDiv_b.lso
+Keep Hierarchy                     : NO
+Netlist Hierarchy                  : as_optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "E:/receiver/receiver_App_Layer/dataLatch.vhd" in Library work.
+Entity <dataLatch> compiled.
+Entity <dataLatch> (Architecture <behav>) compiled.
+Compiling vhdl file "E:/receiver/receiver_App_Layer/zevensegDecoderReceiver.vhd" in Library work.
+Entity <zevensegdecoderReceiver> compiled.
+Entity <zevensegdecoderReceiver> (Architecture <behav>) compiled.
+Compiling vhdl file "E:/receiver/receiver_Datalink_Layer/dataShiftRegister.vhd" in Library work.
+Entity <dataShiftRegister> compiled.
+Entity <dataShiftRegister> (Architecture <behav>) compiled.
+Compiling vhdl file "E:/receiver/receiver_Access_Layer/correlator.vhd" in Library work.
+Entity <correlator> compiled.
+Entity <correlator> (Architecture <behav>) compiled.
+Compiling vhdl file "E:/receiver/receiver_Access_Layer/despreading.vhd" in Library work.
+Entity <despreading> compiled.
+Entity <despreading> (Architecture <behav>) compiled.
+Compiling vhdl file "E:/receiver/receiver_Access_Layer/dpll.vhd" in Library work.
+Entity <dpll> compiled.
+Entity <dpll> (Architecture <behav>) compiled.
+Compiling vhdl file "E:/receiver/receiver_Access_Layer/matchedFilter.vhd" in Library work.
+Entity <matchedFilter> compiled.
+Entity <matchedFilter> (Architecture <behav>) compiled.
+Compiling vhdl file "E:/receiver/receiver_Access_Layer/pN_Generator_and_NCO.vhd" in Library work.
+Entity <pngeneratorAndNCO> compiled.
+Entity <pngeneratorAndNCO> (Architecture <behav>) compiled.
+Compiling vhdl file "E:/receiver/receiver_Access_Layer/receiver_Access_Layer.vhd" in Library work.
+Entity <receiver_AccesLayer> compiled.
+Entity <receiver_AccesLayer> (Architecture <behav>) compiled.
+Compiling vhdl file "E:/receiver/receiver_Datalink_Layer/receiver_Datalink_Layer.vhd" in Library work.
+Entity <receiver_datalinkLayer> compiled.
+Entity <receiver_datalinkLayer> (Architecture <behav>) compiled.
+Compiling vhdl file "E:/receiver/receiver_App_Layer/receiver_App_Layer.vhd" in Library work.
+Entity <receiver_AppLayer> compiled.
+Entity <receiver_AppLayer> (Architecture <behav>) compiled.
+Compiling vhdl file "E:/receiver/receiver_ClkDiv/ClkDiv_voor_Receiver.vhd" in Library work.
+Entity <clkdiv> compiled.
+Entity <clkdiv> (Architecture <behav>) compiled.
+Compiling vhdl file "E:/receiver/receiver_TopFile/receiver_TopFile_b.vhd" in Library work.
+Entity <receiver_TopFile_b> compiled.
+Entity <receiver_TopFile_b> (Architecture <behav>) compiled.
+Compiling vhdl file "E:/receiver/receiver_ClkDiv/receiverMetClkDiv.vhd" in Library work.
+Entity <receiverMetClkDiv_b> compiled.
+Entity <receiverMetClkDiv_b> (Architecture <behav>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <receiverMetClkDiv_b> in library <work> (architecture <behav>).
+
+Analyzing hierarchy for entity <clkdiv> in library <work> (architecture <behav>).
+
+Analyzing hierarchy for entity <receiver_TopFile_b> in library <work> (architecture <behav>).
+
+Analyzing hierarchy for entity <receiver_AccesLayer> in library <work> (architecture <behav>).
+
+Analyzing hierarchy for entity <receiver_datalinkLayer> in library <work> (architecture <behav>).
+
+Analyzing hierarchy for entity <receiver_AppLayer> in library <work> (architecture <behav>).
+
+Analyzing hierarchy for entity <correlator> in library <work> (architecture <behav>).
+
+Analyzing hierarchy for entity <despreading> in library <work> (architecture <behav>).
+
+Analyzing hierarchy for entity <dpll> in library <work> (architecture <behav>).
+
+Analyzing hierarchy for entity <matchedFilter> in library <work> (architecture <behav>).
+
+Analyzing hierarchy for entity <pngeneratorAndNCO> in library <work> (architecture <behav>).
+
+Analyzing hierarchy for entity <dataShiftRegister> in library <work> (architecture <behav>).
+
+Analyzing hierarchy for entity <dataLatch> in library <work> (architecture <behav>).
+
+Analyzing hierarchy for entity <zevensegDecoderReceiver> in library <work> (architecture <behav>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <receiverMetClkDiv_b> in library <work> (Architecture <behav>).
+Entity <receiverMetClkDiv_b> analyzed. Unit <receiverMetClkDiv_b> generated.
+
+Analyzing Entity <clkdiv> in library <work> (Architecture <behav>).
+Entity <clkdiv> analyzed. Unit <clkdiv> generated.
+
+Analyzing Entity <receiver_TopFile_b> in library <work> (Architecture <behav>).
+Entity <receiver_TopFile_b> analyzed. Unit <receiver_TopFile_b> generated.
+
+Analyzing Entity <receiver_AccesLayer> in library <work> (Architecture <behav>).
+INFO:Xst:1561 - "E:/receiver/receiver_Access_Layer/receiver_Access_Layer.vhd" line 178: Mux is complete : default of case is discarded
+Entity <receiver_AccesLayer> analyzed. Unit <receiver_AccesLayer> generated.
+
+Analyzing Entity <correlator> in library <work> (Architecture <behav>).
+Entity <correlator> analyzed. Unit <correlator> generated.
+
+Analyzing Entity <despreading> in library <work> (Architecture <behav>).
+Entity <despreading> analyzed. Unit <despreading> generated.
+
+Analyzing Entity <dpll> in library <work> (Architecture <behav>).
+Entity <dpll> analyzed. Unit <dpll> generated.
+
+Analyzing Entity <matchedFilter> in library <work> (Architecture <behav>).
+INFO:Xst:1561 - "E:/receiver/receiver_Access_Layer/matchedFilter.vhd" line 58: Mux is complete : default of case is discarded
+Entity <matchedFilter> analyzed. Unit <matchedFilter> generated.
+
+Analyzing Entity <pngeneratorAndNCO> in library <work> (Architecture <behav>).
+Entity <pngeneratorAndNCO> analyzed. Unit <pngeneratorAndNCO> generated.
+
+Analyzing Entity <receiver_datalinkLayer> in library <work> (Architecture <behav>).
+Entity <receiver_datalinkLayer> analyzed. Unit <receiver_datalinkLayer> generated.
+
+Analyzing Entity <dataShiftRegister> in library <work> (Architecture <behav>).
+Entity <dataShiftRegister> analyzed. Unit <dataShiftRegister> generated.
+
+Analyzing Entity <receiver_AppLayer> in library <work> (Architecture <behav>).
+Entity <receiver_AppLayer> analyzed. Unit <receiver_AppLayer> generated.
+
+Analyzing Entity <dataLatch> in library <work> (Architecture <behav>).
+Entity <dataLatch> analyzed. Unit <dataLatch> generated.
+
+Analyzing Entity <zevensegDecoderReceiver> in library <work> (Architecture <behav>).
+INFO:Xst:1561 - "E:/receiver/receiver_App_Layer/zevensegDecoderReceiver.vhd" line 54: Mux is complete : default of case is discarded
+Entity <zevensegDecoderReceiver> analyzed. Unit <zevensegDecoderReceiver> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <clkdiv>.
+    Related source file is "E:/receiver/receiver_ClkDiv/ClkDiv_voor_Receiver.vhd".
+    Found 10-bit subtractor for signal <count_nxt$addsub0000> created at line 38.
+    Found 10-bit register for signal <count_pres>.
+    Summary:
+	inferred  10 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <clkdiv> synthesized.
+
+
+Synthesizing Unit <correlator>.
+    Related source file is "E:/receiver/receiver_Access_Layer/correlator.vhd".
+    Found 1-bit register for signal <databit>.
+    Found 6-bit comparator greatequal for signal <msb$cmp_ge0000> created at line 53.
+    Found 6-bit addsub for signal <next_count>.
+    Found 6-bit register for signal <pres_count>.
+    Summary:
+	inferred   7 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+Unit <correlator> synthesized.
+
+
+Synthesizing Unit <despreading>.
+    Related source file is "E:/receiver/receiver_Access_Layer/despreading.vhd".
+    Found 1-bit xor2 for signal <next_xor>.
+    Found 1-bit register for signal <present_xor>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <despreading> synthesized.
+
+
+Synthesizing Unit <dpll>.
+    Related source file is "E:/receiver/receiver_Access_Layer/dpll.vhd".
+    Using one-hot encoding for signal <present_state>.
+    Using one-hot encoding for signal <semafoor_pres>.
+    Using one-hot encoding for signal <segment_after_samafoor>.
+    Found 16x6-bit ROM for signal <segment_before_samafoor>.
+    Found 1-bit register for signal <chip_sampleD1_sig>.
+    Found 1-bit register for signal <chip_sampleD2_sig>.
+    Found 5-bit subtractor for signal <next_countNCO$addsub0000> created at line 209.
+    Found 4-bit up counter for signal <pres_count>.
+    Found 5-bit register for signal <pres_countNCO>.
+    Found 4-bit register for signal <present_state>.
+    Found 4-bit register for signal <semafoor_pres>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   1 Counter(s).
+	inferred  15 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <dpll> synthesized.
+
+
+Synthesizing Unit <matchedFilter>.
+    Related source file is "E:/receiver/receiver_Access_Layer/matchedFilter.vhd".
+    Found 4x62-bit ROM for signal <dips_in$rom0000>.
+    Found 31-bit comparator equal for signal <seq_det_MFilter$cmp_eq0000> created at line 87.
+    Found 31-bit comparator equal for signal <seq_det_MFilter$cmp_eq0001> created at line 87.
+    Found 31-bit register for signal <shifRegi_pres>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred  31 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+Unit <matchedFilter> synthesized.
+
+
+Synthesizing Unit <pngeneratorAndNCO>.
+    Related source file is "E:/receiver/receiver_Access_Layer/pN_Generator_and_NCO.vhd".
+    Using one-hot encoding for signal <present_state>.
+    Found 1-bit register for signal <bit_sample>.
+    Found 1-bit xor2 for signal <gold_receiver>.
+    Found 4-bit register for signal <present_state>.
+    Found 1-bit xor2 for signal <regi_next_pn1$xor0000> created at line 60.
+    Found 1-bit xor4 for signal <regi_next_pn2$xor0000> created at line 61.
+    Found 5-bit register for signal <regi_pn1>.
+    Found 5-bit register for signal <regi_pn2>.
+    Summary:
+	inferred  15 D-type flip-flop(s).
+	inferred   1 Xor(s).
+Unit <pngeneratorAndNCO> synthesized.
+
+
+Synthesizing Unit <dataShiftRegister>.
+    Related source file is "E:/receiver/receiver_Datalink_Layer/dataShiftRegister.vhd".
+    Found 11-bit register for signal <data_pres>.
+    Summary:
+	inferred  11 D-type flip-flop(s).
+Unit <dataShiftRegister> synthesized.
+
+
+Synthesizing Unit <dataLatch>.
+    Related source file is "E:/receiver/receiver_App_Layer/dataLatch.vhd".
+    Found 4-bit register for signal <pre_latch>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <dataLatch> synthesized.
+
+
+Synthesizing Unit <zevensegDecoderReceiver>.
+    Related source file is "E:/receiver/receiver_App_Layer/zevensegDecoderReceiver.vhd".
+    Found 16x7-bit ROM for signal <temp_led$mux0000> created at line 22.
+    Summary:
+	inferred   1 ROM(s).
+Unit <zevensegDecoderReceiver> synthesized.
+
+
+Synthesizing Unit <receiver_AccesLayer>.
+    Related source file is "E:/receiver/receiver_Access_Layer/receiver_Access_Layer.vhd".
+    Found 1-bit 4-to-1 multiplexer for signal <pn_seq_sig>.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <receiver_AccesLayer> synthesized.
+
+
+Synthesizing Unit <receiver_datalinkLayer>.
+    Related source file is "E:/receiver/receiver_Datalink_Layer/receiver_Datalink_Layer.vhd".
+Unit <receiver_datalinkLayer> synthesized.
+
+
+Synthesizing Unit <receiver_AppLayer>.
+    Related source file is "E:/receiver/receiver_App_Layer/receiver_App_Layer.vhd".
+Unit <receiver_AppLayer> synthesized.
+
+
+Synthesizing Unit <receiver_TopFile_b>.
+    Related source file is "E:/receiver/receiver_TopFile/receiver_TopFile_b.vhd".
+Unit <receiver_TopFile_b> synthesized.
+
+
+Synthesizing Unit <receiverMetClkDiv_b>.
+    Related source file is "E:/receiver/receiver_ClkDiv/receiverMetClkDiv.vhd".
+Unit <receiverMetClkDiv_b> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 3
+ 16x6-bit ROM                                          : 1
+ 16x7-bit ROM                                          : 1
+ 4x62-bit ROM                                          : 1
+# Adders/Subtractors                                   : 3
+ 10-bit subtractor                                     : 1
+ 5-bit subtractor                                      : 1
+ 6-bit addsub                                          : 1
+# Counters                                             : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 16
+ 1-bit register                                        : 5
+ 10-bit register                                       : 1
+ 11-bit register                                       : 1
+ 31-bit register                                       : 1
+ 4-bit register                                        : 4
+ 5-bit register                                        : 3
+ 6-bit register                                        : 1
+# Comparators                                          : 3
+ 31-bit comparator equal                               : 2
+ 6-bit comparator greatequal                           : 1
+# Multiplexers                                         : 1
+ 1-bit 4-to-1 multiplexer                              : 1
+# Xors                                                 : 4
+ 1-bit xor2                                            : 3
+ 1-bit xor4                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Loading device for application Rf_Device from file '2vp30.nph' in environment C:\Xilinx\10.1\ISE.
+WARNING:Xst:2677 - Node <semafoor_pres_2> of sequential type is unconnected in block <dpll>.
+WARNING:Xst:2677 - Node <present_state_3> of sequential type is unconnected in block <pngeneratorAndNCO>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 3
+ 16x6-bit ROM                                          : 1
+ 16x7-bit ROM                                          : 1
+ 4x62-bit ROM                                          : 1
+# Adders/Subtractors                                   : 3
+ 10-bit subtractor                                     : 1
+ 5-bit subtractor                                      : 1
+ 6-bit addsub                                          : 1
+# Counters                                             : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 92
+ Flip-Flops                                            : 92
+# Comparators                                          : 3
+ 31-bit comparator equal                               : 2
+ 6-bit comparator greatequal                           : 1
+# Multiplexers                                         : 1
+ 1-bit 4-to-1 multiplexer                              : 1
+# Xors                                                 : 4
+ 1-bit xor2                                            : 3
+ 1-bit xor4                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <receiverMetClkDiv_b> ...
+
+Optimizing unit <clkdiv> ...
+
+Optimizing unit <correlator> ...
+
+Optimizing unit <dpll> ...
+
+Optimizing unit <matchedFilter> ...
+
+Optimizing unit <pngeneratorAndNCO> ...
+
+Optimizing unit <dataShiftRegister> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block receiverMetClkDiv_b, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 96
+ Flip-Flops                                            : 96
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                             *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : receiverMetClkDiv_b.ngr
+Top Level Output File Name         : receiverMetClkDiv_b
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 13
+
+Cell Usage :
+# BELS                             : 241
+#      GND                         : 1
+#      INV                         : 3
+#      LUT2                        : 57
+#      LUT2_D                      : 1
+#      LUT2_L                      : 3
+#      LUT3                        : 23
+#      LUT3_L                      : 1
+#      LUT4                        : 97
+#      LUT4_D                      : 4
+#      LUT4_L                      : 15
+#      MUXCY                       : 32
+#      MUXF5                       : 3
+#      VCC                         : 1
+# FlipFlops/Latches                : 96
+#      FD                          : 9
+#      FDE                         : 82
+#      FDR                         : 1
+#      FDRE                        : 4
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 12
+#      IBUF                        : 4
+#      OBUF                        : 8
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 2vp30ff896-7 
+
+ Number of Slices:                      108  out of  13696     0%  
+ Number of Slice Flip Flops:             96  out of  27392     0%  
+ Number of 4 input LUTs:                204  out of  27392     0%  
+ Number of IOs:                          13
+ Number of bonded IOBs:                  13  out of    556     2%  
+ Number of GCLKs:                         1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk_100mhz                         | BUFGP                  | 96    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -7
+
+   Minimum period: 4.319ns (Maximum Frequency: 231.522MHz)
+   Minimum input arrival time before clock: 5.967ns
+   Maximum output required time after clock: 4.169ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_100mhz'
+  Clock period: 4.319ns (frequency: 231.522MHz)
+  Total number of paths / destination ports: 2725 / 185
+-------------------------------------------------------------------------
+Delay:               4.319ns (Levels of Logic = 19)
+  Source:            receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/shifRegi_pres_29 (FF)
+  Destination:       receiver_TopFile_b_1/receiver_AccesLayer_1/pngeneratorAndNCO_1/regi_pn2_0 (FF)
+  Source Clock:      clk_100mhz rising
+  Destination Clock: clk_100mhz rising
+
+  Data Path: receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/shifRegi_pres_29 to receiver_TopFile_b_1/receiver_AccesLayer_1/pngeneratorAndNCO_1/regi_pn2_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              3   0.370   0.435  receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/shifRegi_pres_29 (receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/shifRegi_pres_29)
+     LUT4:I3->O            1   0.275   0.000  receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mcompar_seq_det_MFilter_cmp_eq0000_lut<0> (receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mcompar_seq_det_MFilter_cmp_eq0000_lut<0>)
+     MUXCY:S->O            1   0.334   0.000  receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mcompar_seq_det_MFilter_cmp_eq0000_cy<0> (receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mcompar_seq_det_MFilter_cmp_eq0000_cy<0>)
+     MUXCY:CI->O           1   0.036   0.000  receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mcompar_seq_det_MFilter_cmp_eq0000_cy<1> (receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mcompar_seq_det_MFilter_cmp_eq0000_cy<1>)
+     MUXCY:CI->O           1   0.036   0.000  receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mcompar_seq_det_MFilter_cmp_eq0000_cy<2> (receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mcompar_seq_det_MFilter_cmp_eq0000_cy<2>)
+     MUXCY:CI->O           1   0.036   0.000  receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mcompar_seq_det_MFilter_cmp_eq0000_cy<3> (receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mcompar_seq_det_MFilter_cmp_eq0000_cy<3>)
+     MUXCY:CI->O           1   0.036   0.000  receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mcompar_seq_det_MFilter_cmp_eq0000_cy<4> (receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mcompar_seq_det_MFilter_cmp_eq0000_cy<4>)
+     MUXCY:CI->O           1   0.036   0.000  receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mcompar_seq_det_MFilter_cmp_eq0000_cy<5> (receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mcompar_seq_det_MFilter_cmp_eq0000_cy<5>)
+     MUXCY:CI->O           1   0.036   0.000  receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mcompar_seq_det_MFilter_cmp_eq0000_cy<6> (receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mcompar_seq_det_MFilter_cmp_eq0000_cy<6>)
+     MUXCY:CI->O           1   0.036   0.000  receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mcompar_seq_det_MFilter_cmp_eq0000_cy<7> (receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mcompar_seq_det_MFilter_cmp_eq0000_cy<7>)
+     MUXCY:CI->O           1   0.036   0.000  receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mcompar_seq_det_MFilter_cmp_eq0000_cy<8> (receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mcompar_seq_det_MFilter_cmp_eq0000_cy<8>)
+     MUXCY:CI->O           1   0.036   0.000  receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mcompar_seq_det_MFilter_cmp_eq0000_cy<9> (receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mcompar_seq_det_MFilter_cmp_eq0000_cy<9>)
+     MUXCY:CI->O           1   0.036   0.000  receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mcompar_seq_det_MFilter_cmp_eq0000_cy<10> (receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mcompar_seq_det_MFilter_cmp_eq0000_cy<10>)
+     MUXCY:CI->O           1   0.036   0.000  receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mcompar_seq_det_MFilter_cmp_eq0000_cy<11> (receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mcompar_seq_det_MFilter_cmp_eq0000_cy<11>)
+     MUXCY:CI->O           1   0.036   0.000  receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mcompar_seq_det_MFilter_cmp_eq0000_cy<12> (receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mcompar_seq_det_MFilter_cmp_eq0000_cy<12>)
+     MUXCY:CI->O           1   0.036   0.000  receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mcompar_seq_det_MFilter_cmp_eq0000_cy<13> (receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mcompar_seq_det_MFilter_cmp_eq0000_cy<13>)
+     MUXCY:CI->O           1   0.036   0.000  receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mcompar_seq_det_MFilter_cmp_eq0000_cy<14> (receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mcompar_seq_det_MFilter_cmp_eq0000_cy<14>)
+     MUXCY:CI->O           9   0.415   0.537  receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mcompar_seq_det_MFilter_cmp_eq0000_cy<15> (receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mcompar_seq_det_MFilter_cmp_eq0000_cy<15>)
+     LUT4_D:I3->LO         1   0.275   0.118  receiver_TopFile_b_1/receiver_AccesLayer_1/seq_det_sig (N85)
+     LUT4:I2->O           10   0.275   0.511  receiver_TopFile_b_1/receiver_AccesLayer_1/pngeneratorAndNCO_1/regi_pn1_not00011 (receiver_TopFile_b_1/receiver_AccesLayer_1/pngeneratorAndNCO_1/regi_pn1_not0001)
+     FDE:CE                    0.263          receiver_TopFile_b_1/receiver_AccesLayer_1/pngeneratorAndNCO_1/regi_pn1_4
+    ----------------------------------------
+    Total                      4.319ns (2.719ns logic, 1.601ns route)
+                                       (62.9% logic, 37.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_100mhz'
+  Total number of paths / destination ports: 1445 / 148
+-------------------------------------------------------------------------
+Offset:              5.967ns (Levels of Logic = 20)
+  Source:            dips_in_b<1> (PAD)
+  Destination:       receiver_TopFile_b_1/receiver_AccesLayer_1/pngeneratorAndNCO_1/regi_pn2_0 (FF)
+  Destination Clock: clk_100mhz rising
+
+  Data Path: dips_in_b<1> to receiver_TopFile_b_1/receiver_AccesLayer_1/pngeneratorAndNCO_1/regi_pn2_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            15   0.878   0.721  dips_in_b_1_IBUF (dips_in_b_1_IBUF)
+     LUT2:I1->O            9   0.275   0.635  receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mrom_dips_in_rom00003411 (receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mrom_dips_in_rom000034)
+     LUT4:I0->O            1   0.275   0.000  receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mcompar_seq_det_MFilter_cmp_eq0001_lut<1> (receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mcompar_seq_det_MFilter_cmp_eq0001_lut<1>)
+     MUXCY:S->O            1   0.334   0.000  receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mcompar_seq_det_MFilter_cmp_eq0001_cy<1> (receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mcompar_seq_det_MFilter_cmp_eq0001_cy<1>)
+     MUXCY:CI->O           1   0.036   0.000  receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mcompar_seq_det_MFilter_cmp_eq0001_cy<2> (receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mcompar_seq_det_MFilter_cmp_eq0001_cy<2>)
+     MUXCY:CI->O           1   0.036   0.000  receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mcompar_seq_det_MFilter_cmp_eq0001_cy<3> (receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mcompar_seq_det_MFilter_cmp_eq0001_cy<3>)
+     MUXCY:CI->O           1   0.036   0.000  receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mcompar_seq_det_MFilter_cmp_eq0001_cy<4> (receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mcompar_seq_det_MFilter_cmp_eq0001_cy<4>)
+     MUXCY:CI->O           1   0.036   0.000  receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mcompar_seq_det_MFilter_cmp_eq0001_cy<5> (receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mcompar_seq_det_MFilter_cmp_eq0001_cy<5>)
+     MUXCY:CI->O           1   0.036   0.000  receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mcompar_seq_det_MFilter_cmp_eq0001_cy<6> (receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mcompar_seq_det_MFilter_cmp_eq0001_cy<6>)
+     MUXCY:CI->O           1   0.036   0.000  receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mcompar_seq_det_MFilter_cmp_eq0001_cy<7> (receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mcompar_seq_det_MFilter_cmp_eq0001_cy<7>)
+     MUXCY:CI->O           1   0.036   0.000  receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mcompar_seq_det_MFilter_cmp_eq0001_cy<8> (receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mcompar_seq_det_MFilter_cmp_eq0001_cy<8>)
+     MUXCY:CI->O           1   0.036   0.000  receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mcompar_seq_det_MFilter_cmp_eq0001_cy<9> (receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mcompar_seq_det_MFilter_cmp_eq0001_cy<9>)
+     MUXCY:CI->O           1   0.036   0.000  receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mcompar_seq_det_MFilter_cmp_eq0001_cy<10> (receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mcompar_seq_det_MFilter_cmp_eq0001_cy<10>)
+     MUXCY:CI->O           1   0.036   0.000  receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mcompar_seq_det_MFilter_cmp_eq0001_cy<11> (receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mcompar_seq_det_MFilter_cmp_eq0001_cy<11>)
+     MUXCY:CI->O           1   0.036   0.000  receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mcompar_seq_det_MFilter_cmp_eq0001_cy<12> (receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mcompar_seq_det_MFilter_cmp_eq0001_cy<12>)
+     MUXCY:CI->O           1   0.036   0.000  receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mcompar_seq_det_MFilter_cmp_eq0001_cy<13> (receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mcompar_seq_det_MFilter_cmp_eq0001_cy<13>)
+     MUXCY:CI->O           1   0.036   0.000  receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mcompar_seq_det_MFilter_cmp_eq0001_cy<14> (receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mcompar_seq_det_MFilter_cmp_eq0001_cy<14>)
+     MUXCY:CI->O           9   0.415   0.517  receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mcompar_seq_det_MFilter_cmp_eq0001_cy<15> (receiver_TopFile_b_1/receiver_AccesLayer_1/matchedFilter_1/Mcompar_seq_det_MFilter_cmp_eq0001_cy<15>)
+     LUT4_D:I2->LO         1   0.275   0.118  receiver_TopFile_b_1/receiver_AccesLayer_1/seq_det_sig (N85)
+     LUT4:I2->O           10   0.275   0.511  receiver_TopFile_b_1/receiver_AccesLayer_1/pngeneratorAndNCO_1/regi_pn1_not00011 (receiver_TopFile_b_1/receiver_AccesLayer_1/pngeneratorAndNCO_1/regi_pn1_not0001)
+     FDE:CE                    0.263          receiver_TopFile_b_1/receiver_AccesLayer_1/pngeneratorAndNCO_1/regi_pn1_4
+    ----------------------------------------
+    Total                      5.967ns (3.465ns logic, 2.502ns route)
+                                       (58.1% logic, 41.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_100mhz'
+  Total number of paths / destination ports: 28 / 7
+-------------------------------------------------------------------------
+Offset:              4.169ns (Levels of Logic = 2)
+  Source:            receiver_TopFile_b_1/receiver_AppLayer_1/dataLatch_1/pre_latch_1 (FF)
+  Destination:       led_out_b<7> (PAD)
+  Source Clock:      clk_100mhz rising
+
+  Data Path: receiver_TopFile_b_1/receiver_AppLayer_1/dataLatch_1/pre_latch_1 to led_out_b<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              7   0.370   0.601  receiver_TopFile_b_1/receiver_AppLayer_1/dataLatch_1/pre_latch_1 (receiver_TopFile_b_1/receiver_AppLayer_1/dataLatch_1/pre_latch_1)
+     LUT4:I0->O            1   0.275   0.332  receiver_TopFile_b_1/receiver_AppLayer_1/zevensegDecoderReceiver_1/Mrom_temp_led_mux000061 (receiver_TopFile_b_1/receiver_AppLayer_1/zevensegDecoderReceiver_1/Mrom_temp_led_mux00006)
+     OBUF:I->O                 2.592          led_out_b_7_OBUF (led_out_b<7>)
+    ----------------------------------------
+    Total                      4.169ns (3.237ns logic, 0.932ns route)
+                                       (77.6% logic, 22.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 3.74 secs
+ 
+--> 
+
+Total memory usage is 261072 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+

@@ -3,23 +3,23 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 use ieee.std_logic_unsigned.all;
 
-entity counter_tb is
-end counter_tb;
+entity debouncer_tb is
+end debouncer_tb;
 
-architecture structural of counter_tb is 
+architecture structural of debouncer_tb is 
 
 -- Component Declaration
-component counter
+component debouncer
 port (
 	clk: in std_logic;
-	up_down: in std_logic;
+	sig_in: in std_logic;
 	rst: in std_logic;
-	count_out: out std_logic_vector(3 downto 0)
+	sync_out: out std_logic
   );
 end component;
 
 -- uut1, uut2 verschillend initaties van component counter, handig om meerdere counters te gebruiken (ipv copy paste)
-for uut : counter use entity work.counter(behav);
+for uut : debouncer use entity work.debouncer(behav);
  
 constant period : time := 100 ns;
 constant delay  : time :=  10 ns;
@@ -28,17 +28,17 @@ signal end_of_sim : boolean := false;
 -- interne testcomponent waarden, moeten niet noodzakelijk hetzelfde zijn als de entiteit
 signal clk:  std_logic;
 signal rst:  std_logic;
-signal up_down:  std_logic;
-signal count_out: std_logic_vector(3 downto 0);
+signal sig_in:  std_logic;
+signal sync_out: std_logic;
 
 BEGIN
 
-	uut: counter PORT MAP(
+	uut: debouncer PORT MAP(
 	-- links naam entiteit, rechts naam testcomponent
       clk => clk,
       rst => rst,
-      up_down => up_down,
-      count_out => count_out);
+      sig_in => sig_in,
+      sync_out => sync_out);
 
 	clock : process
    begin 
@@ -58,7 +58,7 @@ tb : PROCESS
 -- procedure -> functie aanmaken die kan opgeroepen worden
    procedure tbvector(constant stimvect : in std_logic_vector(1 downto 0))is
      begin
-      up_down <= stimvect(1);
+      sig_in <= stimvect(1);
       rst <= stimvect(0);
 
        wait for period;

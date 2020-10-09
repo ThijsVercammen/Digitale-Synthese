@@ -1,0 +1,13 @@
+# Compile of correlator.vhd was successful.
+# Compile of correlator_tb.vhd was successful.
+# Compile of despreading.vhd was successful.
+# Compile of despreading_tb.vhd was successful.
+# Compile of dpll.vhd was successful.
+# Compile of dpll_tb.vhd was successful.
+# Compile of matchedFilter.vhd was successful.
+# Compile of matchedFilter_tb.vhd was successful.
+# Compile of pN_Generator_and_NCO.vhd was successful.
+# Compile of pN_Generator_and_NCO_tb.vhd was successful.
+# Compile of receiver_Access_Layer.vhd was successful.
+# Compile of receiver_Access_Layer_tb.vhd was successful.
+# 12 compiles, 0 failed with no errors. 

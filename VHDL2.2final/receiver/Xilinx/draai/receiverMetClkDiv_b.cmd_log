@@ -1,0 +1,6 @@
+xst -ise "E:/receiver/Xilinx/draai/draai.ise" -intstyle ise -ifn "E:/receiver/Xilinx/draai/receiverMetClkDiv_b.xst" -ofn "E:/receiver/Xilinx/draai/receiverMetClkDiv_b.syr"
+ngdbuild -ise "E:/receiver/Xilinx/draai/draai.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-7 "receiverMetClkDiv_b.ngc" receiverMetClkDiv_b.ngd
+map -ise "E:/receiver/Xilinx/draai/draai.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr off -k 4 -c 100 -tx off -o receiverMetClkDiv_b_map.ncd receiverMetClkDiv_b.ngd receiverMetClkDiv_b.pcf
+par -ise "E:/receiver/Xilinx/draai/draai.ise" -w -intstyle ise -ol std -t 1 receiverMetClkDiv_b_map.ncd receiverMetClkDiv_b.ncd receiverMetClkDiv_b.pcf
+trce -ise "E:/receiver/Xilinx/draai/draai.ise" -intstyle ise -e 3 -s 7 -xml receiverMetClkDiv_b receiverMetClkDiv_b.ncd -o receiverMetClkDiv_b.twr receiverMetClkDiv_b.pcf -ucf E:/receiver/receiver_xup_dsss.ucf
+bitgen -ise "E:/receiver/Xilinx/draai/draai.ise" -intstyle ise -f receiverMetClkDiv_b.ut receiverMetClkDiv_b.ncd

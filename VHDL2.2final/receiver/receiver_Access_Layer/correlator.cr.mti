@@ -1,0 +1,21 @@
+correlator.vhd {1 {vcom -work work -2002 -explicit -vopt E:/3BaICT/Ruben/VHDL2.0/receiver/receiver_Access_Layer/correlator.vhd
+Model Technology ModelSim SE vcom 6.5 Compiler 2009.01 Jan 22 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Compiling entity correlator
+-- Compiling architecture behav of correlator
+
+} {} {}} correlator_tb.vhd {1 {vcom -work work -2002 -explicit -vopt E:/3BaICT/Ruben/VHDL2.0/receiver/receiver_Access_Layer/correlator_tb.vhd
+Model Technology ModelSim SE vcom 6.5 Compiler 2009.01 Jan 22 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Compiling entity correlator_tb
+-- Compiling architecture structural of correlator_tb
+-- Loading entity correlator
+
+} {} {}}

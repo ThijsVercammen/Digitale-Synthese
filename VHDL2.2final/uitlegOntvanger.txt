@@ -1,0 +1,94 @@
+onze ruis is de data of de geInverteerde data (encrypted)
+ontvanger sneller laten clk (16 keer sneller)160Khz
+
+DPLL: dynamic phase-locked loop
+	DOEL: sync bitje geven, geeft aan wanneer signaal stabiel is
+	zegt wanner het mag samplen (zo dicht mogelijk tegen het midden van de puls)
+	met een 'chip' = een puls van de clk van de onvanger
+	zal altijd afgesteld worden om zo dicht mogelijk bij het midden
+	met feedback de vorige verbeeterd de volgende 
+	er kunnen 16 chips in het signaal
+	positie 7 en 8 is perfect
+	eerst alle flanken (neg en pos) detecteren=>extb= transitie tussen de signalen (van de verzender)
+	eerste teller telt de signalen 4bit free running met rst als extb
+		met decoder in welk segment we zitten
+		de teller telt de chip positie (16) in segmenten 0->4 is segment a ...
+	2de deel is een feedback loop
+	chip_sample naar seg_semafoor slaat op welk segment brand als chip_sample 1 staat
+		if segment B => correctie, 16-3 clk wachten
+		if segment C => geen correctie, 16 clk wachten
+		if segment E => correctie, 16-3 clk wachten
+	NCO teller die af telt en als teller = 1 chip_sample op 1 (op 0 zijn we te laat, want dec zal 1 clk duren)
+		D= delay 1 clk (nuttig, kan overbodig zijn)
+		2d=delay 2 clk
+	Semafoor:
+		enkel bij sturen als positieve clk flank
+		copy paste verder 
+		als geen extb geen bijsturening (meerder 0 of 1 achter elkaar)
+	
+	eerst extb dan chip_sample
+
+Mached Filter: heeft extra ppt
+	DOEL: vind in 16 clk's uit of het een 0/1 is al dan niet geëncrypteerd
+	schuifregister, met chip_sample als shift_en
+	geeft clk_en
+	is 31 lang, om op zoek te gaan naar de pn_code
+	2 comparators controleren de inhoud met de pn_code
+		normaal en geinverteerde (constant)
+	als match seq_det op 1 (or poort)
+	2 mux door de dips (gold, pn,pn2 mode)
+	no-ptrn = 31 '1'tjes of '0'tjes
+
+
+PN generator & bit NCO:
+	pn_generator bijna los copy paste (16 keer trager)
+		chip_sample als clk_en
+	seq_det is een soort rst
+	full_seg is pn_start
+		geeft aan wanneer nieuwe sequentie start
+	pn_start zou 16 lang op 1 staan dus daar zit nog een flk det op 
+		bit_sample
+
+Despreading:
+	uitgang zou preamble en data moeten zijn
+	1 '0' van de verzender bestaat uit 31clk(verzender) *16clk(ontvanger) bestaan
+	11 *31 *16
+losse muxen:
+	extb gebruiken we als we geen ptr 
+		want bij 0 nullen zou de out van matched filter lang 1 zijn
+	
+	sdi_despread want als er geen encryptie is
+
+Correlator:
+	haalt de zeer kleiner piekjes er uit
+	eenvoudig
+	wat komt der het meest in voor ?
+	dat stuur ik naar buiten
+	6bit teller (tot 64)
+	bit_sample is de rst (preset met waarde 32)
+	ingang = 1=> +1
+	ingang =0 =>-1 op de teller
+	indien perfect 31 '1'tjes dan komen we op 63 
+	analoog					0
+	normaal nooit over flow we hebben maar 31 chips
+
+
+datashiftreg:
+	serieel naar parallell
+	11 groot
+
+latch:
+	als we de preamble terug zien
+	dan zetten we de data naar de 7-seg
+
+
+
+
+
+
+
+	
+clk synchroniseren
+pn synchroniseren
+
+decryptie = despreading 

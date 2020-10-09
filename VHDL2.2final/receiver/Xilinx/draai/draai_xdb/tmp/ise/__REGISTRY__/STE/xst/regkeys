@@ -1,0 +1,6 @@
+CommandLine
+C:\Xilinx\10.1\ISE\bin\nt\unwrapped\xst.exe -ise E:/receiver/Xilinx/draai/draai.ise -intstyle ise -ifn E:/receiver/Xilinx/draai/receiverMetClkDiv_b.xst -ofn E:/receiver/Xilinx/draai/receiverMetClkDiv_b.syr -finalclean 1
+s
+FormatString
+xst [-ifn <InputFile>] [-ofn <OutputFile>] [-ise <iseProjectFile>] [--quiet] [-intstyle <Style>] [--deb <DebugLevel>] [--finalclean <Clean>] [--PcubeFlow] [--globOptFlow] [--XstNtrc]
+s

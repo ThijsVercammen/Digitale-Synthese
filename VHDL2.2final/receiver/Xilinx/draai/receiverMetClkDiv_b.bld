@@ -1,0 +1,35 @@
+Release 10.1 ngdbuild K.31 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\10.1\ISE\bin\nt\unwrapped\ngdbuild.exe -ise
+E:/receiver/Xilinx/draai/draai.ise -intstyle ise -dd _ngo -nt timestamp -i -p
+xc2vp30-ff896-7 receiverMetClkDiv_b.ngc receiverMetClkDiv_b.ngd
+
+Reading NGO file "E:/receiver/Xilinx/draai/receiverMetClkDiv_b.ngc" ...
+Reading in constraint information from 'E:/receiver/receiver_xup_dsss.ucf'...
+Gathering constraint information from source properties...
+Done.
+
+Resolving constraint associations...
+Checking Constraint Associations...
+Done...
+Checking Partitions ...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 108968 kilobytes
+
+Writing NGD file "receiverMetClkDiv_b.ngd" ...
+
+Writing NGDBUILD log file "receiverMetClkDiv_b.bld"...

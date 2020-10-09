@@ -1,0 +1,27 @@
+//! **************************************************************************
+// Written by: Map K.31 on Thu Dec 13 12:48:21 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "led_out_b<1>" LOCATE = SITE "R8" LEVEL 1;
+COMP "led_out_b<2>" LOCATE = SITE "P5" LEVEL 1;
+COMP "led_out_b<3>" LOCATE = SITE "P4" LEVEL 1;
+COMP "led_out_b<4>" LOCATE = SITE "T2" LEVEL 1;
+COMP "dips_in_b<0>" LOCATE = SITE "M3" LEVEL 1;
+COMP "led_out_b<5>" LOCATE = SITE "R2" LEVEL 1;
+COMP "dips_in_b<1>" LOCATE = SITE "N1" LEVEL 1;
+COMP "led_out_b<6>" LOCATE = SITE "P2" LEVEL 1;
+COMP "led_out_b<7>" LOCATE = SITE "R7" LEVEL 1;
+COMP "up_in_b" LOCATE = SITE "N3" LEVEL 1;
+COMP "sdo_spread_out" LOCATE = SITE "N5" LEVEL 1;
+COMP "rst_b" LOCATE = SITE "P7" LEVEL 1;
+COMP "syncha_b" LOCATE = SITE "T6" LEVEL 1;
+COMP "synchb_b" LOCATE = SITE "V1" LEVEL 1;
+COMP "clk_100mhz" LOCATE = SITE "AJ15" LEVEL 1;
+COMP "down_in_b" LOCATE = SITE "N4" LEVEL 1;
+COMP "led_out_b<0>" LOCATE = SITE "R6" LEVEL 1;
+NET "clk_100mhz_BUFGP/IBUFG" BEL "clk_100mhz_BUFGP/BUFG.GCLKMUX"
+        USELOCALCONNECT;
+NET "clk_100mhz_BUFGP/IBUFG" PERIOD = 10 ns HIGH 50%;
+SCHEMATIC END;
+

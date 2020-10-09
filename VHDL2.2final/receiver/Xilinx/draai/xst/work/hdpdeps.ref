@@ -1,0 +1,104 @@
+V3 55
+FL E:/receiver/receiver_Access_Layer/correlator.vhd 2018/12/13.16:31:54 K.31
+EN work/correlator 1545137128 FL E:/receiver/receiver_Access_Layer/correlator.vhd \
+      PB ieee/std_logic_1164 1200023565 PB ieee/std_logic_arith 1200023566 \
+      PB ieee/STD_LOGIC_UNSIGNED 1200023567
+AR work/correlator/behav 1545137129 \
+      FL E:/receiver/receiver_Access_Layer/correlator.vhd EN work/correlator 1545137128
+FL E:/receiver/receiver_Access_Layer/despreading.vhd 2018/12/16.22:28:16 K.31
+EN work/despreading 1545137130 \
+      FL E:/receiver/receiver_Access_Layer/despreading.vhd PB ieee/std_logic_1164 1200023565 \
+      PB ieee/std_logic_arith 1200023566 PB ieee/STD_LOGIC_UNSIGNED 1200023567
+AR work/despreading/behav 1545137131 \
+      FL E:/receiver/receiver_Access_Layer/despreading.vhd EN work/despreading 1545137130
+FL E:/receiver/receiver_Access_Layer/dpll.vhd 2018/12/17.20:43:22 K.31
+EN work/dpll 1545137132 FL E:/receiver/receiver_Access_Layer/dpll.vhd \
+      PB ieee/std_logic_1164 1200023565 PH ieee/NUMERIC_STD 1200023568 \
+      PB ieee/STD_LOGIC_UNSIGNED 1200023567
+AR work/dpll/behav 1545137133 \
+      FL E:/receiver/receiver_Access_Layer/dpll.vhd EN work/dpll 1545137132
+FL E:/receiver/receiver_Access_Layer/matchedFilter.vhd 2018/12/13.16:42:10 K.31
+EN work/matchedFilter 1545137134 \
+      FL E:/receiver/receiver_Access_Layer/matchedFilter.vhd \
+      PB ieee/std_logic_1164 1200023565 PH ieee/NUMERIC_STD 1200023568 \
+      PB ieee/STD_LOGIC_UNSIGNED 1200023567
+AR work/matchedFilter/behav 1545137135 \
+      FL E:/receiver/receiver_Access_Layer/matchedFilter.vhd \
+      EN work/matchedFilter 1545137134
+FL E:/receiver/receiver_Access_Layer/pN_Generator_and_NCO.vhd 2018/12/13.16:44:04 K.31
+EN work/pngeneratorAndNCO 1545137136 \
+      FL E:/receiver/receiver_Access_Layer/pN_Generator_and_NCO.vhd \
+      PB ieee/std_logic_1164 1200023565 PB ieee/std_logic_arith 1200023566 \
+      PB ieee/STD_LOGIC_UNSIGNED 1200023567
+AR work/pngeneratorAndNCO/behav 1545137137 \
+      FL E:/receiver/receiver_Access_Layer/pN_Generator_and_NCO.vhd \
+      EN work/pngeneratorAndNCO 1545137136
+FL E:/receiver/receiver_Access_Layer/receiver_Access_Layer.vhd 2018/12/13.16:46:12 K.31
+EN work/receiver_AccesLayer 1545137138 \
+      FL E:/receiver/receiver_Access_Layer/receiver_Access_Layer.vhd \
+      PB ieee/std_logic_1164 1200023565 PB ieee/std_logic_arith 1200023566 \
+      PB ieee/STD_LOGIC_UNSIGNED 1200023567
+AR work/receiver_AccesLayer/behav 1545137139 \
+      FL E:/receiver/receiver_Access_Layer/receiver_Access_Layer.vhd \
+      EN work/receiver_AccesLayer 1545137138 CP correlator CP despreading CP dpll \
+      CP matchedFilter CP pngeneratorAndNCO
+FL E:/receiver/receiver_App_Layer/dataLatch.vhd 2018/12/13.20:13:48 K.31
+EN work/dataLatch 1545137122 FL E:/receiver/receiver_App_Layer/dataLatch.vhd \
+      PB ieee/std_logic_1164 1200023565 PH ieee/NUMERIC_STD 1200023568 \
+      PB ieee/STD_LOGIC_UNSIGNED 1200023567
+AR work/dataLatch/behav 1545137123 \
+      FL E:/receiver/receiver_App_Layer/dataLatch.vhd EN work/dataLatch 1545137122
+FL E:/receiver/receiver_App_Layer/receiver_App_Layer.vhd 2018/12/13.20:13:06 K.31
+EN work/receiver_AppLayer 1545137142 \
+      FL E:/receiver/receiver_App_Layer/receiver_App_Layer.vhd \
+      PB ieee/std_logic_1164 1200023565 PB ieee/std_logic_arith 1200023566 \
+      PB ieee/STD_LOGIC_UNSIGNED 1200023567
+AR work/receiver_AppLayer/behav 1545137143 \
+      FL E:/receiver/receiver_App_Layer/receiver_App_Layer.vhd \
+      EN work/receiver_AppLayer 1545137142 CP dataLatch CP zevensegDecoderReceiver
+FL E:/receiver/receiver_App_Layer/zevensegDecoderReceiver.vhd 2018/11/23.21:32:52 K.31
+EN work/zevensegdecoderReceiver 1545137124 \
+      FL E:/receiver/receiver_App_Layer/zevensegDecoderReceiver.vhd \
+      PB ieee/std_logic_1164 1200023565 PH ieee/NUMERIC_STD 1200023568 \
+      PB ieee/STD_LOGIC_UNSIGNED 1200023567
+AR work/zevensegdecoderReceiver/behav 1545137125 \
+      FL E:/receiver/receiver_App_Layer/zevensegDecoderReceiver.vhd \
+      EN work/zevensegdecoderReceiver 1545137124
+FL E:/receiver/receiver_ClkDiv/ClkDiv_voor_Receiver.vhd 2018/12/13.16:27:36 K.31
+EN work/clkdiv 1545137144 FL E:/receiver/receiver_ClkDiv/ClkDiv_voor_Receiver.vhd \
+      PB ieee/std_logic_1164 1200023565 PH ieee/NUMERIC_STD 1200023568 \
+      PB ieee/STD_LOGIC_UNSIGNED 1200023567
+AR work/clkdiv/behav 1545137145 \
+      FL E:/receiver/receiver_ClkDiv/ClkDiv_voor_Receiver.vhd EN work/clkdiv 1545137144
+FL E:/receiver/receiver_ClkDiv/receiverMetClkDiv.vhd 2018/12/13.16:51:56 K.31
+EN work/receiverMetClkDiv_b 1545137148 \
+      FL E:/receiver/receiver_ClkDiv/receiverMetClkDiv.vhd PB ieee/std_logic_1164 1200023565 \
+      PB ieee/std_logic_arith 1200023566 PB ieee/STD_LOGIC_UNSIGNED 1200023567
+AR work/receiverMetClkDiv_b/behav 1545137149 \
+      FL E:/receiver/receiver_ClkDiv/receiverMetClkDiv.vhd \
+      EN work/receiverMetClkDiv_b 1545137148 CP clkdiv CP receiver_TopFile_b
+FL E:/receiver/receiver_Datalink_Layer/dataShiftRegister.vhd 2018/12/13.20:44:18 K.31
+EN work/dataShiftRegister 1545137126 \
+      FL E:/receiver/receiver_Datalink_Layer/dataShiftRegister.vhd \
+      PB ieee/std_logic_1164 1200023565 PH ieee/NUMERIC_STD 1200023568 \
+      PB ieee/STD_LOGIC_UNSIGNED 1200023567
+AR work/dataShiftRegister/behav 1545137127 \
+      FL E:/receiver/receiver_Datalink_Layer/dataShiftRegister.vhd \
+      EN work/dataShiftRegister 1545137126
+FL E:/receiver/receiver_Datalink_Layer/receiver_Datalink_Layer.vhd 2018/11/21.15:29:24 K.31
+EN work/receiver_datalinkLayer 1545137140 \
+      FL E:/receiver/receiver_Datalink_Layer/receiver_Datalink_Layer.vhd \
+      PB ieee/std_logic_1164 1200023565 PB ieee/std_logic_arith 1200023566 \
+      PB ieee/STD_LOGIC_UNSIGNED 1200023567
+AR work/receiver_datalinkLayer/behav 1545137141 \
+      FL E:/receiver/receiver_Datalink_Layer/receiver_Datalink_Layer.vhd \
+      EN work/receiver_datalinkLayer 1545137140 CP dataShiftRegister
+FL E:/receiver/receiver_TopFile/receiver_TopFile_b.vhd 2018/12/13.16:51:46 K.31
+EN work/receiver_TopFile_b 1545137146 \
+      FL E:/receiver/receiver_TopFile/receiver_TopFile_b.vhd \
+      PB ieee/std_logic_1164 1200023565 PB ieee/std_logic_arith 1200023566 \
+      PB ieee/STD_LOGIC_UNSIGNED 1200023567
+AR work/receiver_TopFile_b/behav 1545137147 \
+      FL E:/receiver/receiver_TopFile/receiver_TopFile_b.vhd \
+      EN work/receiver_TopFile_b 1545137146 CP receiver_AccesLayer \
+      CP receiver_datalinkLayer CP receiver_AppLayer

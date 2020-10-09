@@ -1,0 +1,412 @@
+m255
+K3
+13
+cModel Technology
+dC:\modeltech_6.5\examples
+Ecorrelator
+Z0 w1542964498
+Z1 DPx4 ieee 18 std_logic_unsigned 0 22 hEMVMlaNCR^<OOoVNV;m90
+Z2 DPx4 ieee 15 std_logic_arith 0 22 GJbAT?7@hRQU9IQ702DT]2
+Z3 DPx4 ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+Z4 dE:\3BaICT\Ruben\VHDL2.0\receiver\receiver_Access_Layer
+Z5 8E:/3BaICT/Ruben/VHDL2.0/receiver/receiver_Access_Layer/correlator.vhd
+Z6 FE:/3BaICT/Ruben/VHDL2.0/receiver/receiver_Access_Layer/correlator.vhd
+l0
+L8
+V>1Q0fEnMT:Jeo[@ml09oA2
+Z7 OE;C;6.5;42
+32
+Z8 o-work work -2002 -explicit
+Z9 tExplicit 1
+!s100 ZB[5l3zBmRLK?G?Xz6H=b0
+Abehav
+R1
+R2
+R3
+Z10 DEx4 work 10 correlator 0 22 >1Q0fEnMT:Jeo[@ml09oA2
+l25
+L20
+VdYeFS`ejno7jmLRd_2NID0
+R7
+32
+Z11 Mx3 4 ieee 14 std_logic_1164
+Z12 Mx2 4 ieee 15 std_logic_arith
+Z13 Mx1 4 ieee 18 std_logic_unsigned
+R8
+R9
+!s100 RIQ7>_<Heh7iRhFlB_IcM3
+Ecorrelator_tb
+Z14 w1542460734
+R2
+R1
+Z15 DPx4 ieee 11 numeric_std 0 22 =NSdli^?T5OD8;4F<blj<3
+R3
+R4
+Z16 8E:/3BaICT/Ruben/VHDL2.0/receiver/receiver_Access_Layer/correlator_tb.vhd
+Z17 FE:/3BaICT/Ruben/VHDL2.0/receiver/receiver_Access_Layer/correlator_tb.vhd
+l0
+L9
+V`RIe_?3ohY4Vci?:U63n11
+R7
+32
+R8
+R9
+!s100 65IKDTbbPcb[z;64bKQme0
+Astructural
+R10
+R2
+R1
+R15
+R3
+DEx4 work 13 correlator_tb 0 22 `RIe_?3ohY4Vci?:U63n11
+l39
+L12
+VZm`IS4KW_H=RCH`lmfM=]3
+R7
+32
+Z18 Mx4 4 ieee 14 std_logic_1164
+Z19 Mx3 4 ieee 11 numeric_std
+Z20 Mx2 4 ieee 18 std_logic_unsigned
+Z21 Mx1 4 ieee 15 std_logic_arith
+R8
+R9
+!s100 <J37VjIbbRg5_U>QE;Cof3
+Edespreading
+Z22 w1542966034
+R1
+R2
+R3
+R4
+Z23 8E:/3BaICT/Ruben/VHDL2.0/receiver/receiver_Access_Layer/despreading.vhd
+Z24 FE:/3BaICT/Ruben/VHDL2.0/receiver/receiver_Access_Layer/despreading.vhd
+l0
+L8
+VW]c@Ek4JX2D7_R53GO1Co0
+R7
+32
+R8
+R9
+!s100 BNoI2^Q;K5Yo^B12@ZjaI1
+Abehav
+R1
+R2
+R3
+Z25 DEx4 work 11 despreading 0 22 W]c@Ek4JX2D7_R53GO1Co0
+l23
+L20
+VOQaOa<F[L?a`km^oMLX5C2
+R7
+32
+R11
+R12
+R13
+R8
+R9
+!s100 TJfgXj:lOiBE6cdQ?FQQ61
+Edespreading_tb
+Z26 w1542472404
+R2
+R1
+R15
+R3
+R4
+Z27 8E:/3BaICT/Ruben/VHDL2.0/receiver/receiver_Access_Layer/despreading_tb.vhd
+Z28 FE:/3BaICT/Ruben/VHDL2.0/receiver/receiver_Access_Layer/despreading_tb.vhd
+l0
+L8
+VljV811W:f0dDS`8;PMa[03
+R7
+32
+R8
+R9
+!s100 NS49@oO7STA:Z>m;7n00S2
+Astructural
+R25
+R2
+R1
+R15
+R3
+DEx4 work 14 despreading_tb 0 22 ljV811W:f0dDS`8;PMa[03
+l32
+L11
+VZ^9GBd:JJcaI6fFkNc^;02
+R7
+32
+R18
+R19
+R20
+R21
+R8
+R9
+!s100 Sid:?fS<=ch?9[o7D[EJG3
+Edpll
+Z29 w1542968098
+R2
+R1
+R15
+R3
+R4
+Z30 8E:/3BaICT/Ruben/VHDL2.0/receiver/receiver_Access_Layer/dpll.vhd
+Z31 FE:/3BaICT/Ruben/VHDL2.0/receiver/receiver_Access_Layer/dpll.vhd
+l0
+L8
+Vz>6V;dLe@KGH2EfRQ7_:]3
+R7
+32
+R8
+R9
+!s100 ]^:`AUPFJ4EYb]jT6W2Ym3
+Abehav
+R2
+R1
+R15
+R3
+Z32 DEx4 work 4 dpll 0 22 z>6V;dLe@KGH2EfRQ7_:]3
+l41
+L20
+V5RAOQ693M^ab3[iH`kFF32
+R7
+32
+R18
+R19
+R20
+R21
+R8
+R9
+!s100 >T9jSXPQfaU@7CdzjRZ3D0
+Edpll_tb
+Z33 w1542452272
+R2
+R1
+R15
+R3
+R4
+Z34 8E:/3BaICT/Ruben/VHDL2.0/receiver/receiver_Access_Layer/dpll_tb.vhd
+Z35 FE:/3BaICT/Ruben/VHDL2.0/receiver/receiver_Access_Layer/dpll_tb.vhd
+l0
+L7
+VBT6k8PgB^oW`Qhm7:29:]1
+R7
+32
+R8
+R9
+!s100 `RAA0Ei[?Q7bcPjaRZV^o3
+Astructural
+R32
+R2
+R1
+R15
+R3
+DEx4 work 7 dpll_tb 0 22 BT6k8PgB^oW`Qhm7:29:]1
+l38
+L10
+VeT?LzG>^?>be]F0RKc`1D2
+R7
+32
+R18
+R19
+R20
+R21
+R8
+R9
+!s100 0F5@jEIzLfjnDaOOR6j7I0
+Ematchedfilter
+Z36 w1543566435
+R2
+R1
+R15
+R3
+R4
+Z37 8E:/3BaICT/Ruben/VHDL2.0/receiver/receiver_Access_Layer/matchedFilter.vhd
+Z38 FE:/3BaICT/Ruben/VHDL2.0/receiver/receiver_Access_Layer/matchedFilter.vhd
+l0
+L8
+V@a>2kJ8QGYU<nhKTVTDPC0
+R7
+32
+R8
+R9
+!s100 M=UQSzJO7g@dS5Me1c40Q3
+Abehav
+R2
+R1
+R15
+R3
+Z39 DEx4 work 13 matchedfilter 0 22 @a>2kJ8QGYU<nhKTVTDPC0
+l42
+L19
+VEHG[BU2<6>9L3Kg^<?cU53
+R7
+32
+R18
+R19
+R20
+R21
+R8
+R9
+!s100 ozj=IJNPNzbX4@0WM>dE_1
+Ematchedfilter_tb
+Z40 w1543062954
+R2
+R1
+R15
+R3
+R4
+Z41 8E:/3BaICT/Ruben/VHDL2.0/receiver/receiver_Access_Layer/matchedFilter_tb.vhd
+Z42 FE:/3BaICT/Ruben/VHDL2.0/receiver/receiver_Access_Layer/matchedFilter_tb.vhd
+l0
+L8
+VFYi3G2Aj0I5z;lDNg;VHJ2
+R7
+32
+R8
+R9
+!s100 QJF1zcf2JzFnXGOLNg>d>0
+Astructural
+R39
+R2
+R1
+R15
+R3
+DEx4 work 16 matchedfilter_tb 0 22 FYi3G2Aj0I5z;lDNg;VHJ2
+l37
+L11
+VD`jEKdzDCKZ4d_5e6W]101
+R7
+32
+R18
+R19
+R20
+R21
+R8
+R9
+!s100 094j2YfiA2Yh:fPMb3F;C3
+Epngeneratorandnco
+Z43 w1542824420
+R1
+R2
+R3
+R4
+Z44 8E:/3BaICT/Ruben/VHDL2.0/receiver/receiver_Access_Layer/pN_Generator_and_NCO.vhd
+Z45 FE:/3BaICT/Ruben/VHDL2.0/receiver/receiver_Access_Layer/pN_Generator_and_NCO.vhd
+l0
+L13
+VY9iSaClDkC[;bnMN=USDN1
+R7
+32
+R8
+R9
+!s100 l5do:9O>kK@VlAG<kiWVI2
+Abehav
+R1
+R2
+R3
+Z46 DEx4 work 17 pngeneratorandnco 0 22 Y9iSaClDkC[;bnMN=USDN1
+l36
+L27
+V]3W_0W4m`<S;SYZ@1CNDI3
+R7
+32
+R11
+R12
+R13
+R8
+R9
+!s100 OkOT`=LeK]e`=lSV[0BS>0
+Epngeneratorandnco_tb
+Z47 w1542314850
+R2
+R1
+R15
+R3
+R4
+Z48 8E:/3BaICT/Ruben/VHDL2.0/receiver/receiver_Access_Layer/pN_Generator_and_NCO_tb.vhd
+Z49 FE:/3BaICT/Ruben/VHDL2.0/receiver/receiver_Access_Layer/pN_Generator_and_NCO_tb.vhd
+l0
+L13
+V[JbN0UEkAlO[lI4IaeZGP2
+R7
+32
+R8
+R9
+!s100 FI1GNi[=oN1ULSQ7HO^P40
+Astructural
+R46
+R2
+R1
+R15
+R3
+DEx4 work 20 pngeneratorandnco_tb 0 22 [JbN0UEkAlO[lI4IaeZGP2
+l47
+L16
+V@JBMeTSiHD=:gB]WQR?^G0
+R7
+32
+R18
+R19
+R20
+R21
+R8
+R9
+!s100 A2`ZBX_h;d^[;=kZ[W2>^1
+Ereceiver_acceslayer
+Z50 w1543571383
+R1
+R2
+R3
+R4
+Z51 8E:/3BaICT/Ruben/VHDL2.0/receiver/receiver_Access_Layer/receiver_Access_Layer.vhd
+Z52 FE:/3BaICT/Ruben/VHDL2.0/receiver/receiver_Access_Layer/receiver_Access_Layer.vhd
+l0
+L8
+VO>BUiUildNR5@7NTbY[M70
+R7
+32
+R8
+R9
+!s100 ZQo]n[FkmBabY[MH4^:;01
+Abehav
+R1
+R2
+R3
+DEx4 work 19 receiver_acceslayer 0 22 O>BUiUildNR5@7NTbY[M70
+l98
+L19
+VfPT1mS[m17T=FcLGA`Z=H1
+!s100 25J?XkNFZ;Q0iUCYEfgcn1
+R7
+32
+R11
+R12
+R13
+R8
+R9
+Ereceiver_acceslayer_tb
+Z53 w1542810758
+R15
+R3
+R4
+Z54 8E:/3BaICT/Ruben/VHDL2.0/receiver/receiver_Access_Layer/receiver_Access_Layer_tb.vhd
+Z55 FE:/3BaICT/Ruben/VHDL2.0/receiver/receiver_Access_Layer/receiver_Access_Layer_tb.vhd
+l0
+L7
+Vn[aHIa6@UoAIzTAY83cf92
+!s100 ;zVzRG?=1=;OUCDz[LM>I1
+R7
+32
+R8
+R9
+Abench
+R15
+R3
+Z56 DEx4 work 22 receiver_acceslayer_tb 0 22 n[aHIa6@UoAIzTAY83cf92
+l32
+L10
+Z57 VL@1L7jD_`kWL;EMZ3>f8d1
+Z58 !s100 U5:4ki]>JKcRh=DkGZjm<2
+R7
+32
+Z59 Mx2 4 ieee 14 std_logic_1164
+Z60 Mx1 4 ieee 11 numeric_std
+R8
+R9
